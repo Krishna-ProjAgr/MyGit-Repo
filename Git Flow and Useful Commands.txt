@@ -15,6 +15,7 @@ git config --global user.email "*********"
 git config --list
 
 BASIC COMMANDS :
+
 git clone https://.... 		 - Repo's link from GitHub Website
 git status 			 - checks if the code in GitHub is same as code on local machine
  
@@ -26,6 +27,7 @@ git commit -m "********" 	 - add relatable message for changes made in place of 
 commit doesnot make changes on GitHub website, PUSh does
 
 git push origin main		 - remote github's name is origin, main is branch name
+git push -u origin main		 - set upstream like a shortcut making it work with just git push
 
 we can check if a folder is git repo by checking if we have .git hidden file by using ls - a command
 
@@ -33,10 +35,47 @@ git init 			 - will make local older into git repo
 git remote add origin 		 - to name the github's name 
 git remote -v 			 - verify the remote to check which repo local folder is pointing to 
 
+WORK FLOW FOR NEW PROJECTS:
+
+GitHub Repo ->  Clone -> Create/Copy Code to local repo -> add, commit, push
+
+
+GIT BRANCH :
+
 git branch			 - to get the branch name 
 git branch -M main		 - usually the name will be Master, we can rename it to main. 
+git checkout -b New_Branch_Name	 - to switch between branched of the repo
+git checkout -d Branch_Name 	 -  delete any branch
+
+git diff Branch_to_Merge	 - to find the differences between two branches
+git merge Branch_to_Merge	 - to merge branches
+
+MERGE CONFLICTS :
+GIT PULL :
+
+Pull request (PR) can be raised on GitHub then the owner of main branch can verify and approve merging
+git pull origin main 		 - Used to update local repo with GitHub look
+
+git diff Branch_name		 - finds code difference between branches
+git merge Branch_name 		 - will merge the branches or code changes
+
+UNDOING CHANGES :
+
+git reset file_name		 - will unstage if its not committed yet
+git reset HEAD~1		 - to undo 1 commit (latest)
+git log 			 - will provide hash for each commit which will be unique
+git reset hash_code		 - will bring changes to that particular omitted hash (delete from git)
+git reset --hard hash_code	 - will bring changes to that particular omitted hash (in both git and local folder)
+
+FORK :
+                                                                                                                                                                                          
+used in GitHub to copy other's repos into our repo. 
+we can make changes and create PR if we want the code from or repo can be included other's repo where we copied from.
 
 
+Thankyou krishna. 
+
+ 
 
 
 
