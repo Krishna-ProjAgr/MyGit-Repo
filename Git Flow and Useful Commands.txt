@@ -1,0 +1,49 @@
+GIT 	- Tool used as "Version Control System"
+GITHUB 	- Website
+
+On Git we have to add and then commit, On GitHub add can be skipped and code can be directly committed
+
+ReadMe is a special file - basic HTML will help fomartting the data in the file
+
+
+git --version
+pwd - Current working ID
+
+Git Setup :
+git config --global user.name "*********"
+git config --global user.email "*********"
+git config --list
+
+BASIC COMMANDS :
+git clone https://.... 		 - Repo's link from GitHub Website
+git status 			 - checks if the code in GitHub is same as code on local machine
+ 
+U - Untracked, M - Modified, (add)staged, unmodified
+
+git add file_name or git add . 	 - "." will stage all components from the library 
+git commit -m "********" 	 - add relatable message for changes made in place of ***
+
+commit doesnot make changes on GitHub website, PUSh does
+
+git push origin main		 - remote github's name is origin, main is branch name
+
+we can check if a folder is git repo by checking if we have .git hidden file by using ls - a command
+
+git init 			 - will make local older into git repo
+git remote add origin 		 - to name the github's name 
+git remote -v 			 - verify the remote to check which repo local folder is pointing to 
+
+git branch			 - to get the branch name 
+git branch -M main		 - usually the name will be Master, we can rename it to main. 
+
+
+
+
+
+
+
+
+
+
+
+ 
